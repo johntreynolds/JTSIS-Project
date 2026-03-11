@@ -2,12 +2,6 @@ import java.util.Scanner;
 
 public class playerMenus
 	{
-		public static void main(String[] args)
-			{
-				Menus();
-
-			}
-
 		static Scanner userIntInput = new Scanner(System.in);
 
 		public static int Menus()
@@ -28,26 +22,31 @@ public class playerMenus
 				 if (choice == 1) {
 					 menuChoice = 1;
 				 }else {menuChoice = 2;}
+			 }
+			 else if(choice == 2) {
 				 
 	        
 	        	 System.out.println("1. Change student grades");
 	        	 System.out.println("2. Change student schedule");
 	        	 choice = userIntInput.nextInt();
 				 if (choice == 1) {
-					 menuChoice = 1;
-				 }else {menuChoice = 2;} 		
+					 menuChoice = 3;
+				 }else {menuChoice = 4;} 		
 					 
 				 }
 				 
-	         
-	        	 System.out.println("1. Sort by last name");
-	        	 System.out.println("2. Sort by GPA");
-	        	 System.out.println("3. Sort by period");
-	        	 choice = userIntInput.nextInt();
-				 if (choice == 1) {
-					 menuChoice = 1;
-				 }else if  (choice == 2) {
-					 menuChoice = 2;
-		         }else {menuChoice = 3;}
-
+			 else 
+				 {
+					 System.out.println("1. Sort by last name");
+		        	 System.out.println("2. Sort by GPA");
+		        	 System.out.println("3. Sort by period");
+		        	 choice = userIntInput.nextInt();
+					 if (choice == 1) {
+						 menuChoice = 5;
+					 }else if  (choice == 2) {
+						 menuChoice = 6;
+			         }else {menuChoice = 7;} 
+				 }
+	        	 
+		 
 	return menuChoice;}}
