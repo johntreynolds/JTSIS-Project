@@ -5,6 +5,10 @@ public class SISRunner
 
 		public static void main(String[] args) throws IOException
 			{
+				readTextFile.readTextFile();
+		
+				
+				StudentOperations.printStudents();
 				switch (playerMenus.Menus())
 				{
 					// add student
@@ -22,13 +26,13 @@ public class SISRunner
 					// change grades
 					case 3: 
 							{
-								
+								ChangeClassroom.changeGrade(readTextFile.students);
 								break;
 							}
 					// change schedule
 					case 4: 
 							{
-								
+								ChangeClassroom.changeSchedule(readTextFile.students);
 								break;
 							}
 					// sort last name		
